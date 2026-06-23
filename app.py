@@ -101,7 +101,7 @@ def draw_radar(power, duration, damage, temperature):
     fig = plt.figure()
     ax = plt.subplot(111, polar=True)
 
-    ax.plot(angles, values, linewidth=3, label="风险强度")
+    ax.plot(angles, values, linewidth=3, label="Risk Intensity")
     ax.fill(angles, values, alpha=0.25)
 
     ax.set_thetagrids(np.degrees(angles[:-1]), labels)
@@ -149,7 +149,7 @@ def draw_pie(power, duration, damage, temperature):
         textprops={'fontsize': 10}
     )
 
-    ax.set_title("风险组成分析")
+    ax.set_title("Risk Composition Analysis")
 
     # ⭐图例（关键）
     ax.legend(wedges, labels, loc="center left", bbox_to_anchor=(1, 0.5))
