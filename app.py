@@ -85,7 +85,7 @@ def draw_radar(power, duration, damage, temperature):
   
     plt.rcParams["axes.unicode_minus"] = False
 
-    labels = ["功率", "时间", "损伤", "温度"]
+    labels = ["Power", "Duration", "Damage", "Temperature"]
 
     values = np.array([power, duration, damage, temperature], dtype=float)
 
@@ -122,10 +122,10 @@ def draw_pie(power, duration, damage, temperature):
     plt.rcParams["axes.unicode_minus"] = False
 
     labels = [
-        "能量风险",
-        "时间暴露",
-        "组织损伤",
-        "热效应"
+        "Energy Risk",
+        "Exposure",
+        "Tissue Damage",
+        "Heat"
     ]
 
     values = [
