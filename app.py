@@ -1,6 +1,14 @@
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib
+
+plt.rcParams['font.sans-serif'] = ['DejaVu Sans']
+plt.rcParams['axes.unicode_minus'] = False
+
+
+
+
 
 from model import predict_parameters
 from simulator import simulate
@@ -74,7 +82,7 @@ def generate_report(power, duration, temperature, damage, risk):
 # ======================
 def draw_radar(power, duration, damage, temperature):
 
-    plt.rcParams["font.sans-serif"] = ["SimHei"]
+  
     plt.rcParams["axes.unicode_minus"] = False
 
     labels = ["功率", "时间", "损伤", "温度"]
@@ -110,7 +118,7 @@ def draw_radar(power, duration, damage, temperature):
 # ======================
 def draw_pie(power, duration, damage, temperature):
 
-    plt.rcParams["font.sans-serif"] = ["SimHei"]
+   
     plt.rcParams["axes.unicode_minus"] = False
 
     labels = [
